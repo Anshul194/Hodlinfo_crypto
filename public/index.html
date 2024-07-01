@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodlinfo</title>
+    <link rel="stylesheet" href="./css//style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>HODLINFO</h1>
+            <div class="conversion">
+                <button class="btn">Connect Telegram</button>
+            </div>
+        </div>
+        <div class="price">
+            <div class="price-info">
+                <div class="heading-2">Best Price to Trade</div>
+                <div class="price-value">₹ 54,95,976
+                </div>
+                <div class="percentage">
+                    <div>0.1% 5 Mins</div>
+                    <div>0.96% 1 Hour</div>
+                    <div>2.73% 1 Day</div>
+                    <div>7.51% 7 Days</div>
+                </div>
+            </div>
+        </div>
+        <table class="tablevalue">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>volume</th>
+                    <th>base_unit</th>
+                </tr>
+            </thead>
+            <tbody id="data-table">
+                <!-- Data will be injected here from the backend -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
