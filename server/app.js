@@ -4,7 +4,6 @@ const dotenv = require('dotenv');
 const apiRoutes = require('./routes/api');
 const path = require('path');
 
- // Ensure this path is correct
 const cors = require('cors');
 
 
@@ -13,7 +12,7 @@ dotenv.config();
 const app = express();
 app.use(cors());
 const PORT = process.env.PORT || 3000;
-console.log('MongoDB URI:', process.env.MONGODB_URI);  // For debugging
+console.log('MongoDB URI:', process.env.MONGODB_URI); 
 
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
@@ -27,7 +26,7 @@ db.once('open', () => {
 });
 
 app.use(express.json());
-app.use('/api', apiRoutes); // Ensure this line is correct
+app.use('/api', apiRoutes); 
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
 

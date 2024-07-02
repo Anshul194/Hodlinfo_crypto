@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to fetch and update ticker data
     const fetchAndUpdateTickers = () => {
         fetch('/api/tickers')
             .then(response => response.json())
@@ -23,9 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     };
 
-    // Initial fetch and update
     fetchAndUpdateTickers();
 
-    // Refresh data every minute
     setInterval(fetchAndUpdateTickers, 60 * 1000);
 });
